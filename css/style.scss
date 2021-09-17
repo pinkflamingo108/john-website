@@ -1,0 +1,577 @@
+$mainGreen: #0a6031;
+$lightGreen: #18d26e;
+$mainBlue: #2074c8;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bar {
+  height: 8vh;
+  width: 100vw;
+  background-color: $mainBlue;
+  display: flex;
+  align-items: center;
+
+  p {
+    padding: 1.2rem;
+    color: #fff;
+    font-weight: 300;
+  }
+}
+
+.phone {
+  color: $lightGreen;
+  font-size: 1.3rem;
+  padding-right: 0.5rem !important;
+}
+
+.main-background {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/industry03.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .index-mainText {
+    margin-top: 5rem;
+    .intro-header {
+      color: #fff;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .intro-text {
+      color: #fff;
+      margin: 0 10rem 0 10rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+  }
+
+  .light-green {
+    color: $lightGreen !important;
+  }
+
+  .nav-container {
+    width: 100vw;
+    height: 10vh;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        list-style: none;
+        margin: 0.8rem;
+        font-size: 1.2rem;
+        a {
+          text-decoration: none;
+          color: #fff;
+          position: relative;
+
+          &:hover {
+            color: $lightGreen;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $lightGreen;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover:before {
+            visibility: visible;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .button-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background: $mainGreen;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    &:hover {
+      background: #fff;
+      cursor: pointer;
+      color: $lightGreen;
+      transition: ease-in-out 0.5s;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+//What we do
+
+.services-container {
+  width: 100vw;
+  min-height: 60vh;
+}
+
+.services-wrapper {
+  display: flex;
+}
+
+.s-header {
+  padding-top: 1.5rem;
+  text-align: center;
+  color: $mainGreen;
+  font-weight: 300;
+  font-size: 4rem;
+  .work {
+    color: $mainBlue;
+    margin-left: 1rem;
+  }
+}
+
+.service {
+  width: 100vw;
+  text-align: center;
+  margin: 2rem;
+}
+
+.icon01 {
+  color: $lightGreen;
+  font-size: 4rem;
+  margin: 1rem;
+}
+
+// About us
+
+.about-img {
+  padding-top: 2rem;
+  min-height: 60vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/images/worldMap02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.about-text {
+  width: 100vw;
+
+  h2 {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $mainGreen;
+  }
+
+  .pen {
+    color: $lightGreen;
+    padding-left: 1.2rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
+//Contact Us
+
+.contactMiddle {
+  min-height: 60vh;
+  width: 100vw;
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    url(/images/worldMap02.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  h3 {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: 300;
+    color: $mainGreen;
+  }
+  p {
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.3rem;
+  }
+}
+
+.contactInfo-wrapper {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  h4 {
+    font-weight: 300;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  p {
+    max-width: 12rem;
+    text-align: center;
+    font-size: 1rem;
+  }
+}
+
+.iconContact {
+  color: $lightGreen;
+  font-size: 3rem;
+  margin: 0.3rem;
+}
+
+// Company images
+.swiper-wrapper {
+  width: 100vw;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.company01 {
+  margin-top: 3rem;
+}
+
+.company03 {
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+.company04 {
+  margin-top: 1rem;
+  margin-left: -2rem;
+}
+
+.swipper-text {
+  font-size: 4rem;
+  font-weight: 300;
+  text-align: center;
+  color: $mainGreen;
+}
+
+//Submit Form
+
+.form {
+  width: 50vw;
+  position: relative;
+  height: 50px;
+  input {
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+  }
+
+  label {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+//About
+
+.about-container {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: $mainBlue;
+}
+.mission-container {
+  img {
+    height: 20rem;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2rem;
+    margin-top: 1.1rem;
+    color: $lightGreen;
+  }
+  p {
+    max-width: 40vw;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.vision-container {
+  img {
+    height: 20rem;
+  }
+  h3 {
+    text-align: center;
+    font-weight: 500;
+    margin-top: 1.1rem;
+    color: $lightGreen;
+    font-size: 2rem;
+  }
+
+  p {
+    max-width: 40vw;
+    text-align: center;
+    color: #fff;
+  }
+}
+
+//Footer
+
+.footer-container {
+  min-height: 40vh;
+  width: 100vw;
+  background: $mainBlue;
+}
+
+.footerInfo-container {
+  padding: 1rem;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+}
+
+.fAbout-container {
+  max-width: 31vh;
+
+  h2 {
+    color: $lightGreen;
+    font-weight: 400;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+    color: #fff;
+  }
+}
+
+.links-container {
+  h2 {
+    color: $lightGreen;
+    font-weight: 400;
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      margin: 0.5rem;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    margin: 1rem;
+    &:hover {
+      color: $lightGreen;
+      transition: ease-in-out 0.6s;
+    }
+  }
+}
+
+.dot {
+  color: $lightGreen;
+  margin-right: 1rem;
+
+  &:hover {
+    color: $mainGreen;
+  }
+}
+
+.contact-container {
+  h2 {
+    color: $lightGreen;
+    font-weight: 400;
+    text-align: center;
+  }
+  p {
+    max-width: 31vh;
+    color: #fff;
+    margin: 0.2rem;
+    text-align: center;
+  }
+}
+
+// Copyright
+
+.copyright-container {
+  width: 100vw;
+
+  p {
+    display: flex;
+    justify-content: center;
+    color: $lightGreen;
+    padding-bottom: 0.5rem;
+  }
+}
+
+// About Website
+
+.main-background02 {
+  min-height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/images/industry01.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .index-mainText {
+    margin-top: 5rem;
+    .intro-header {
+      color: #fff;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    .intro-text {
+      color: #fff;
+      margin: 0 10rem 0 10rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-weight: 300;
+      font-size: 1.2rem;
+    }
+  }
+
+  .light-green {
+    color: $lightGreen !important;
+  }
+
+  .nav-container {
+    width: 100vw;
+    height: 10vh;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+
+      li {
+        list-style: none;
+        margin: 0.8rem;
+        font-size: 1.2rem;
+        a {
+          text-decoration: none;
+          color: #fff;
+          position: relative;
+
+          &:hover {
+            color: $lightGreen;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $lightGreen;
+            visibility: hidden;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover:before {
+            visibility: visible;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .button-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    background: $mainGreen;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    &:hover {
+      background: #fff;
+      cursor: pointer;
+      color: $lightGreen;
+      transition: ease-in-out 0.5s;
+    }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.solutions-container {
+  min-height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.solutions-header {
+  padding-top: 1.5rem;
+
+  h2 {
+    font-weight: 400;
+    font-size: 3rem;
+    color: $mainGreen;
+    text-align: center;
+  }
+  p {
+    margin: 0, 4rem;
+  }
+}
